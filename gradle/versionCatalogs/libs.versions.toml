@@ -1,0 +1,46 @@
+[versions]
+kotlin = "1.9.0"
+jetpack = "1.3.0"
+material3 = "1.2.0"
+exoPlayer = "1.5.0"
+hilt = "2.52"
+room = "2.5.0-alpha04"
+workmanager = "2.9.0"
+lifecycle = "2.6.0"
+dataStore = "1.8.0"
+activity = "1.8.0"
+navigation = "2.7.7"
+compose = "1.7.0"
+trustManager = "1.4.0"
+
+[libraries]
+kotlin-stdlib = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib", version = "${kotlin}" }
+kotlin-stdlib-jdk8 = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib-jdk8", version = "${kotlin}" }
+kotlin-serialization = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version = "1.5.0" }
+
+jetpack-compose = { group = "androidx.compose", version = "${compose}", ext = "jar" }
+jetpack-compose-bom = { group = "androidx.compose", version = "${compose}", ext = "pom" }
+jetpack-compose-runtime = { group = "androidx.compose.runtime", name = "compose-runtime", version = "${compose}" }
+jetpack-compose-ui = { group = "androidx.compose.ui", name = "compose-ui", version = "${compose}" }
+jetpack-compose-ui-graphics = { group = "androidx.compose.ui", name = "compose-ui-graphics", version = "${compose}" }
+jetpack-compose-material3 = { group = "androidx.compose.material3", name = "compose-material3", version = "${material3}" }
+jetpack-compose-material3-extended = { group = "androidx.compose.material3", name = "compose-material3-extended", version = "${material3}" }
+jetpack-compose-navigation = { group = "androidx.navigation", name = "navigation-compose", version = "${navigation}" }
+jetpack-activity = { group = "androidx.activity", name = "activity-compose", version = "${activity}" }
+jetpack-livedata = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version = "${lifecycle}" }
+jetpack-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version = "${lifecycle}" }
+jetpack-room = { group = "androidx.room", name = "room-ktx", version = "${room}" }
+jetpack-room-runtime = { group = "androidx.room", name = "room-runtime", version = "${room}" }
+jetpack-workmanager = { group = "androidx.work", name = "workmanager", version = "${workmanager}" }
+exo-player-core = { group = "com.google.mediaexoplayer", name = "exo-player-core", version = "${exoPlayer}" }
+exo-player-ui = { group = "com.google.mediaexoplayer", name = "exo-player-ui", version = "${exoPlayer}" }
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version = "${hilt}" }
+hilt-compose = { group = "com.google.dagger", name = "hilt-compose", version = "${hilt}" }
+moshi = { group = "com.squareup.moshi", name = "moshi", version = "1.14.0" }
+moshi-kotlin = { group = "com.squareup.moshi", name = "moshi-kotlin", version = "1.14.0" }
+trust-manager = { group = "com.github.keepco", name = "trust-manager", version = "${trustManager}" }
+
+[plugins]
+kotlin = "org.jetbrains.kotlin.android"
+compose = "org.jetbrains.kotlin.compose"
+application = "com.google.dagger.hilt.android Hilt Android"

@@ -1,0 +1,22 @@
+<resources>
+    <!-- Dark theme calm palette -->
+    <color name="primary">#9D96F6</color>
+    <color name="primary_container">#443477</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="secondary">#3CFFBF</color>
+    <color name="secondary_container">#00B5A6</color>
+    <color name="on_secondary">#000000</color>
+    <color name="surface">#1A1A1A</color>
+    <color name="on_surface">#F5F5F7</color>
+    <color name="background">#1A1A1A</color>
+    <color name="on_background">#F5F5F7</color>
+    <color name="outline">#A0A0A0</color>
+    <color name="surface_variant">#2A2A2A</color>
+    <color name="on_surface_variant">#A0A0A0</color>
+    <color name="error">#FF7A6B</color>
+    <color name="error_container">#69000F</color>
+    <color name="on_error">#FFFFFF</color>
+
+    <!-- Divider -->
+    <color name="divider">#404040</color>
+</resources>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph">
+
+    <fragment
+        android:id="@+id/onboarding_fragment"
+        android:name="com.kumbukaapp.recall.ui.screens.OnboardingScreen"
+        android:label="">
+        <action
+            android:id="@+id/action_onboarding_to_main"
+            app:destinationId="@+id/main_nav_graph"
+            app:popUpTo="onboarding_fragment" />
+    </fragment>
+
+    <navigation
+        android:id="@+id/main_nav_graph"
+        android:label="main">
+        <fragment
+            android:id="@+id/history_fragment"
+            android:name="com.kumbukaapp.recall.ui.screens.HistoryScreen"
+            android:label="@string/title_activity_history">
+            <action
+                android:id="@+id/action_history_to_detail"
+                app:destinationId="@+id/call_detail_fragment" />
+        </fragment>
+
+        <fragment
+            android:id="@+id/call_detail_fragment"
+            android:name="com.kumbukaapp.recall.ui.screens.CallDetailScreen"
+            android:label="@string/title_activity_detail" />
+
+        <fragment
+            android:id="@+id/search_fragment"
+            android:name="com.kumbukaapp.recall.ui.screens.SearchScreen"
+            android:label="@string/title_activity_search" />
+
+        <fragment
+            android:id="@+id/settings_fragment"
+            android:name="com.kumbukaapp.recall.ui.screens.SettingsScreen"
+            android:label="@string/title_activity_settings" />
+    </navigation>
+</navigation>
